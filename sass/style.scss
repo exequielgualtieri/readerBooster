@@ -1,1 +1,30 @@
 @use 'header.scss';
+@use 'textArea.scss';
+@use 'handler.scss';
+@use 'footer.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, monospace;
+}
+
+body {
+    background-color: #141432;
+}
+
+button {
+    background: #141432;
+    margin: .2em;
+    padding: 1em;
+    border-radius: 1em;
+    border: 1px solid #3f51b5;
+    color: #FFF;
+    font-weight: 500;
+}
+
+button:hover {
+    background: #1d1e42;
+    cursor: pointer;
+}

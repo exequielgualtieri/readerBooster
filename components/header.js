@@ -1,26 +1,24 @@
-export function header (param) {
-    let lang = param.default
-    console.log(lang)
-    return `
+export function header(param) {
+  let lang = param.default;
+  return `
     <header>
-    <nav class="nav">
-    <div class="nav__container col-lg-12">
-        <div class="col-md-6 col-lg-8">
-        <h2 class="nav__container-h2 mb-0">${lang.title}</h2>
-        <p class="">${lang.subTitle}</p>
-        </div>
-        <section class="nav__container-section d-none d-lg-block col-lg-4">
-        <div class="text-right">
-            <img width="50" src="../icons/engFlag.svg">
-            <img width="50" src="../icons/spaFlag.svg">
-            <img width="50" src="../icons/porFlag.svg">
-            <img width="50" src="../icons/itaFlag.svg">
-            <img width="50" src="../icons/fraFlag.svg">
-        </div>
-        </section>
-    </div>
-    </nav>
+        <nav class="nav">
+            <div class="nav__container">
+                <div class="nav__title">
+                    <h2 class="nav__container_h2">${lang.title}</h2>
+                    <p class="">${lang.subTitle}</p>
+                </div>
+                <section class="nav__container_section">
+                    <div class="nav__section_icons">
+                        <img class="nav__section_icons-flag" width="40" src="../icons/engFlag.svg">
+                        <img class="nav__section_icons-flag" width="40" src="../icons/spaFlag.svg">
+                        <img class="nav__section_icons-flag" width="40" src="../icons/porFlag.svg">
+                        <img class="nav__section_icons-flag" width="40" src="../icons/itaFlag.svg">
+                        <img class="nav__section_icons-flag" width="40" src="../icons/fraFlag.svg">
+                    </div>
+                </section>
+            </div>
+        </nav>
     </header>
     `
-
 }

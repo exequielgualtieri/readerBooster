@@ -1,0 +1,10 @@
+.footer {
+    background: #1d1e42;
+    display: flex;
+    padding: 1em;
+    justify-content: flex-end;
+
+    &__btn {
+        border-bottom: 0;
+    }
+}

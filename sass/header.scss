@@ -1,6 +1,25 @@
 .nav {
     display: flex;
-    &__container{
+    justify-content: space-around;
+    padding: 1rem;
+    background: #1d1e42;
+    color: #FFF;
+    border-bottom: 1px solid #090917;
+
+    &__container {
         display: inherit;
+        width: 100%;
+        justify-content: space-between;
+
+        &_section {
+            border-left: 2px solid #3f51b5;
+            padding-left: 5px;
+            border-radius: 5px;
+        }
+    }
+    
+    &__section_icons-flag {
+        margin-top: 7px;
+        margin-left: 10px;
     }
 }

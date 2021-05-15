@@ -1,6 +1,17 @@
-import { domTarget } from './dom.js'
-import { header } from './header.js'
+import { domTarget } from '../scripts/dom.js'
+import { header } from '../components/header.js'
+import { textArea } from '../components/textArea.js'
+import { handler } from '../components/handler.js'
+import { footer } from '../components/footer.js'
 import * as spa from '../lang/spa.js'
 const dom = new domTarget('domContainer')
 
-dom.innerHTML = header(spa),header(spa);
+function renderApp() {
+    dom.innerHTML = 
+    header(spa) + 
+    textArea(spa) +
+    handler(spa) +
+    footer(spa);
+}
+
+renderApp()
