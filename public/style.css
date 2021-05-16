@@ -21,11 +21,16 @@
   margin-left: 10px;
 }
 
+#eng:hover, #spa:hover, #por:hover, #ita:hover, #fra:hover {
+  cursor: pointer;
+}
+
 .textArea {
   padding: 1em;
   display: flex;
   flex-direction: column;
   border-bottom: 1px solid #090917;
+  width: 100vw;
 }
 .textArea > textarea {
   outline: none;
@@ -81,10 +86,29 @@ button {
   color: #FFF;
   font-weight: 500;
 }
-
 button:hover {
   background: #1d1e42;
   cursor: pointer;
+}
+button:focus {
+  background-color: #3f51b5;
+}
+
+#domContainer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-x: hidden;
+}
+#domContainer section:nth-child(2) {
+  height: inherit;
+  display: inline-flex;
+  width: 300vw;
+  right: 0vw;
+  position: relative;
+  transition: 0.5s;
+  transition-timing-function: cubic-bezier(1, 0, 0, 1);
 }
 
 /*# sourceMappingURL=style.css.map */

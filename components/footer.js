@@ -1,5 +1,5 @@
 export function footer (param) {
-    let lang = param.default
+    let lang = param
     return `<footer>
         <div class="footer">
             <button class="footer__btn">${lang.tips}</button>

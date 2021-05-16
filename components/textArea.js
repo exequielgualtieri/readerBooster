@@ -1,7 +1,15 @@
 export function textArea (param) {
-    let lang = param.default
+    let lang = param
     return `
-    <section>
+    <section id="playArea">
+        <div class="textArea">
+            <textarea name="" id="" cols="30" rows="10" placeholder="${lang.placeholder}"></textarea>
+            <button class="textArea__btn">${lang.start}</button>
+        </div>
+        <div class="textArea">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Escribe o Pega un texto para leer"></textarea>
+            <button class="textArea__btn">Comenzar</button>
+        </div>
         <div class="textArea">
             <textarea name="" id="" cols="30" rows="10" placeholder="Escribe o Pega un texto para leer"></textarea>
             <button class="textArea__btn">Comenzar</button>

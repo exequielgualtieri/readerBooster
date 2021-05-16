@@ -3,3 +3,6 @@ export class domTarget {
         return document.querySelector('#'+param)
     }
 }
+export function $(param) {
+    return document.getElementById(param)
+}
